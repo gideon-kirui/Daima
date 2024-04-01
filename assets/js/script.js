@@ -49,3 +49,12 @@ window.addEventListener("scroll", function () {
   window.scrollY >= 400 ? header.classList.add("active")
     : header.classList.remove("active");
 }); 
+
+// PROFILE DROPDOWN
+const profile = document.querySelector('.header-bottom-actions .profile');
+const imgProfile = profile.querySelector('img');
+const dropdownProfile = profile.querySelector('.profile-link');
+
+imgProfile.addEventListener('click', function () {
+	dropdownProfile.classList.toggle('show');
+})
