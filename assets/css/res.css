@@ -1,0 +1,91 @@
+
+
+/*-----------------------------------*\
+  #Residential baner content
+\*-----------------------------------*/
+
+
+.resbn {
+    padding-block: var(--section-padding);
+    background: linear-gradient(#ffffff1a, rgba(43, 57, 64, .5)), url(../images/images\ \(9\).jpeg) center center no-repeat;
+    background-size: cover;
+    height: 400px;
+    padding-top: 80px;
+  }
+
+.resbn-in{
+    padding-block: var(--section-padding);
+    background: linear-gradient(#ffffff1a, rgba(43, 57, 64, .5)), url(../images/ind_roof.jpeg) center center no-repeat;
+    background-size: cover;
+    height: 400px;
+    padding-top: 80px;
+}
+
+.resbn-ins{
+    padding-block: var(--section-padding);
+    background: linear-gradient(#ffffff1a, rgba(43, 57, 64, .5)), url(../images/ins_roof.jpeg) center center no-repeat;
+    background-size: cover;
+    height: 400px;
+    padding-top: 80px;
+}
+.resbn-content { margin-bottom: 40px; }
+
+.resbn-subtitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+  
+.resbn-subtitle ion-icon { color: var(--orange-soda); }
+
+.resbn-subtitle span {
+    color: var(--dark-jungle-green);
+    font-size: var(--fs-5);
+    font-weight: var(--fw-700);
+}
+
+.resbn-title { 
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+}
+  
+  .resbn-text {
+    width: fit-content;
+    color: rgb(255, 255, 255);
+    font-size: var(--fs-5);
+    line-height: 1.8;
+    padding-left: 15px;
+    border-left: 3px solid;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, hsla(0, 0%, 15%, 0.445), rgba(234, 236, 236, 0.336));
+  }
+  
+
+  /*-----------------------------------*\
+  #Residential baner content
+  \*-----------------------------------*/
+
+.make-order{
+    background-color: rgb(17, 145, 219);
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 600px) {
+    .pr_lst{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .property-card{
+        max-width: 400px;
+    }
+}

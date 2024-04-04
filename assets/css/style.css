@@ -135,9 +135,6 @@ body {
 }
 
 
-
-
-
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -269,6 +266,19 @@ button, a { transition: var(--transition); }
 }
 
 .has-scrollbar::-webkit-scrollbar-button { width: 15%; }
+
+.grn_bg{
+  background-color: rgb(7, 194, 7);
+}
+.rd_bg{
+  background-color: rgb(250, 3, 3);
+}
+.ble_bg{
+  background-color: rgb(2, 99, 226);
+}
+.blk_bg{
+  background-color: rgb(2, 2, 2);
+}
 
 /*-----------------------------------*\
   #HEADER
@@ -461,6 +471,7 @@ button, a { transition: var(--transition); }
 	border-radius: 50%;
 	object-fit: cover;
 	cursor: pointer;
+  margin-left: 6px;
 }
 .header-bottom-actions .profile .profile-link {
 	position: absolute;
@@ -730,6 +741,7 @@ button, a { transition: var(--transition); }
 .property-card {
   border: 1px solid var(--alice-blue);
   box-shadow: var(--shadow-2);
+  margin-bottom: 40px;
 }
 
 .property-card .card-banner {
@@ -1117,7 +1129,6 @@ button, a { transition: var(--transition); }
 .footer {
   background: var(--raisin-black-1);
   color: var(--white);
-  margin-bottom: 68px;
 }
 
 .footer .container { padding-inline: 30px; }
@@ -1308,8 +1319,6 @@ button, a { transition: var(--transition); }
     max-width: unset;
     padding-inline: 25px;
   }
-
-
 
   /**
    * CTA
