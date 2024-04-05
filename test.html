@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continuous Horizontal Scrolling</title>
+  <style>
+    #scrollingDiv {
+      overflow: hidden;
+      white-space: nowrap; /* Prevent content from wrapping */
+      width: 100%; /* Adjust this to control the width of the scrolling area */
+    }
+
+    #scrollingContent {
+      display: inline-block;
+      animation: scroll 15s linear infinite; /* Change 15s to adjust the speed of scrolling */
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="scrollingDiv">
+    <!-- Content to be scrolled -->
+    <span id="scrollingContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod aliquam massa, et dignissim justo lacinia eget.</span>
+    <span id="scrollingContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod aliquam massa, et dignissim justo lacinia eget.</span>
+    <!-- You can add more content here -->
+  </div>
+
+  <script>
+    // Wrap the content of the div in another div for scrolling
+    var scrollingDiv = document.getElementById("scrollingDiv");
+    var content = scrollingDiv.innerHTML;
+    scrollingDiv.innerHTML = '<div id="scrollingContent">' + content + '</div>';
+  </script>
+</body>
+</html>

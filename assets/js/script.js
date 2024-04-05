@@ -58,3 +58,8 @@ const dropdownProfile = profile.querySelector('.profile-link');
 imgProfile.addEventListener('click', function () {
 	dropdownProfile.classList.toggle('show');
 })
+
+ // Wrap the content of the div in another div for scrolling
+ var scrollingDiv = document.getElementById("scrollingDiv");
+ var content = scrollingDiv.innerHTML;
+ scrollingDiv.innerHTML = '<div id="scrollingContent">' + content + '</div>';
