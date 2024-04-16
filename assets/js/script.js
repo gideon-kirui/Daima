@@ -63,3 +63,50 @@ imgProfile.addEventListener('click', function () {
  var scrollingDiv = document.getElementById("scrollingDiv");
  var content = scrollingDiv.innerHTML;
  scrollingDiv.innerHTML = '<div id="scrollingContent">' + content + '</div>';
+
+ // Cart popup
+function openCart() {
+  document.querySelector('.cart-cont').style.display = 'block'
+}
+
+function closeCart() {
+  document.querySelector('.cart-cont').style.display = 'none'
+}
+
+// Mission, Vission, History And core Values //
+
+// Mission
+function openMission() {
+  document.querySelector('.mission').style.display = 'block'
+}
+
+function closeMission() {
+  document.querySelector('.mission').style.display = 'none'
+}
+
+// Vission
+function openVission() {
+  document.querySelector('.vission').style.display = 'block'
+}
+
+function closeVission() {
+  document.querySelector('.vission').style.display = 'none'
+}
+
+// Core values
+function openCvalues() {
+  document.querySelector('.core-values').style.display = 'block'
+}
+
+function closeCvalues() {
+  document.querySelector('.core-values').style.display = 'none'
+}
+
+// History
+function openHistory() {
+  document.querySelector('.history').style.display = 'block'
+}
+
+function closeHistory() {
+  document.querySelector('.history').style.display = 'none'
+}

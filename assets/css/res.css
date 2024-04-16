@@ -53,11 +53,12 @@
 }
   
   .resbn-text {
-    width: fit-content;
+    max-width: 280px;
     color: rgb(255, 255, 255);
     font-size: var(--fs-5);
     line-height: 1.8;
     padding-left: 15px;
+    padding-right: 5px;
     border-left: 3px solid;
     margin-bottom: 30px;
     background: linear-gradient(to right, hsla(0, 0%, 15%, 0.445), rgba(234, 236, 236, 0.336));
@@ -67,16 +68,6 @@
   /*-----------------------------------*\
   #Residential baner content
   \*-----------------------------------*/
-
-.make-order{
-    background-color: rgb(17, 145, 219);
-    width: fit-content;
-    padding: 10px;
-    color: white;
-    font-weight: 900;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
 
 @media (min-width: 600px) {
     .pr_lst{

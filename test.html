@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Continuous Horizontal Scrolling</title>
-  <style>
-    #scrollingDiv {
-      overflow: hidden;
-      white-space: nowrap; /* Prevent content from wrapping */
-      width: 100%; /* Adjust this to control the width of the scrolling area */
-    }
-
-    #scrollingContent {
-      display: inline-block;
-      animation: scroll 15s linear infinite; /* Change 15s to adjust the speed of scrolling */
-    }
-
-    @keyframes scroll {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Pop-up Example</title>
+<style>
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+</style>
 </head>
 <body>
-  <div id="scrollingDiv">
-    <!-- Content to be scrolled -->
-    <span id="scrollingContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod aliquam massa, et dignissim justo lacinia eget.</span>
-    <span id="scrollingContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod aliquam massa, et dignissim justo lacinia eget.</span>
-    <!-- You can add more content here -->
-  </div>
 
-  <script>
-    // Wrap the content of the div in another div for scrolling
-    var scrollingDiv = document.getElementById("scrollingDiv");
-    var content = scrollingDiv.innerHTML;
-    scrollingDiv.innerHTML = '<div id="scrollingContent">' + content + '</div>';
-  </script>
+<button onclick="openPopup()">Open Pop-up</button>
+
+<div class="overlay" onclick="closePopup()"></div>
+<div class="popup" id="popup">
+  <h2>This is a Pop-up</h2>
+  <p>Click outside the pop-up to close.</p>
+</div>
+
+<script>
+function openPopup() {
+  document.getElementById("popup").style.display = "block";
+  document.getElementsByClassName("overlay")[0].style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+  document.getElementsByClassName("overlay")[0].style.display = "none";
+}
+</script>
+
 </body>
 </html>
