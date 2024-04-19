@@ -110,3 +110,16 @@ function openHistory() {
 function closeHistory() {
   document.querySelector('.history').style.display = 'none'
 }
+
+// Questions and Answers pop up
+
+document.addEventListener('DOMContentLoaded', function() {
+  const questions = document.querySelectorAll('.question h2');
+
+  questions.forEach(function(question) {
+    question.addEventListener('click', function() {
+      const answer = this.nextElementSibling;
+      answer.classList.toggle('show');
+    });
+  });
+});
