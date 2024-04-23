@@ -420,6 +420,7 @@ button, a { transition: var(--transition); }
   right: 1%;
   border-radius: 50%;
   align-content: center;
+  cursor: pointer;
 }
 .m-v-h-cv-cont .pp-cls-btn ion-icon{
   margin: auto;
@@ -466,22 +467,50 @@ button, a { transition: var(--transition); }
 
 /* Question and Answers Pop Up */
 
+.gt-answs{
+  background-color: rgba(19, 19, 19, 0.849);
+  display: none;
+}
+.gt-answs .hlp-p-ttl{
+  width: fit-content;
+  color: white;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
 .faq-container {
-  max-width: 600px;
+  display: grid;
+  width: 95%;
   margin: 0 auto;
 }
 
-.question {
+.faq-container .faq-contnt{
+  width: 100%;
+  margin: 10px auto;
+}
+
+.faq-container .faq-contnt h4{
+  width: fit-content;
+  color: white;
+  margin: 20px auto;
+  font-size: 16px;
+}
+
+.faq-contnt .question {
+  width: 100%;
   margin-bottom: 20px;
 }
 
 .question h2 {
-  margin: 0;
+  width: 90%;
+  margin: auto;
   cursor: pointer;
   background-color: #f0f0f0;
   padding: 10px;
   border-radius: 5px;
   transition: background-color 0.3s;
+  font-size: 12px;
 }
 
 .question h2:hover {
@@ -489,24 +518,273 @@ button, a { transition: var(--transition); }
 }
 
 .answer {
+  width: 90%;
   display: none;
+  margin: auto;
+}
+.answer p{
+  margin: 10px auto;
+  color: #fff;
+  font-size: 11px;
 }
 
 .answer.show {
   display: block;
-  animation: slideDown 0.5s ease;
 }
 
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+
+.faq-social h5{
+  width: fit-content;
+  color: rgb(10, 161, 231);
+  margin: auto;
 }
+
+.faq-social h4{
+  width: fit-content;
+  color: white;
+  margin: 10px auto;
+  font-size: 16px;
+}
+
+.faq-social-list{
+  width: 95%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.faq-social-link{
+  width: fit-content;
+  color: white;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.faq-social-link a{
+  color: white;
+  background-color: #007bff;
+  text-align: center;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.faq-social-link p{
+  font-size: 12px;
+}
+.ml-faq {
+  border: 3px solid rgb(170, 170, 170);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.ml-faq h2{
+  width: fit-content;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 14px;
+  margin: auto;
+  text-align: center;
+}
+.ml-faq form label{
+  color: #cbd5df;
+  margin: 5px;
+}
+.ml-faq form input{
+  width: 98%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  color: #525252;
+  background-color: #d4d4d4;
+  font-weight: 900;
+}
+.ml-faq form textarea{
+  width: 98%;
+  height: 80px;
+  background-color: #d4d4d4;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #525252;
+  padding: 5px;
+}
+.ml-faq form button{
+  background-color: #007bff;
+  padding: 3px 5px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  margin: 5px;
+}
+
+/* Become A patner Popup */
+.bcm-ptn{
+  display: none;
+}
+.bcm-ptn-f{
+  width: 95%;
+  margin: auto;
+  margin-top: 15%;
+  background-color: rgba(19, 19, 19, 0.582);
+}
+.bcm-ptn-f form{
+  margin-top: 20px;
+}
+
+/* Vaccancies Page */
+.vcncs{
+  display: none;
+}
+.vacnciespage{
+  background-color: rgba(19, 19, 19, 0.733);
+  height: 100vh;
+  padding-top: 30px;
+}
+.vacnciespage h4{
+  color: #fff;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 12px;
+}
+.vacnciespage .question{
+  margin-top: 20px;
+}
+.vacnciespage .question .faq-q{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.vacnciespage .question .faq-q span{
+  background-color: #007bff;
+  padding: 1px 2px;
+  border-radius: 5px;
+  color: white;
+}
+.vacnciespage .question .answer p{
+  font-size: 12px;
+  line-height: 20px;
+}
+.vacnciespage .question .answer b{
+  color: brown;
+  background-color: #ddd;
+  padding: 1px 2px;
+  border-radius: 5px;
+}
+.rqmnts h4{
+  color: #fff;
+}
+.rqmnts ul li{
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 12px;
+  list-style: disc;
+}
+.pstd-clsng{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.pstd-clsng h5{
+  color: rgb(150, 149, 149);
+  background-color: #ddd;
+  padding: 1px 2px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.pstd-clsng .pstd{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.pstd-clsng .clsng{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.pstd-clsng .clsng h5{
+  color: red;
+}
+.pstd-clsng .clsng p{
+  font-weight: 900;
+}
+.apl-pst{
+  margin-top: 15px;
+}
+.apl-pst h4{
+  color: white;
+}
+.apl-pst form label{
+  color: rgb(158, 158, 158);
+}
+.apl-pst form input{
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.apl-pst form button{
+  background-color: #007bff;
+  margin: 10px 0px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+ /* order tracking */
+.ord-tbl{
+  color: #fff;
+  padding-top: 20px;
+  background-color: rgba(19, 19, 19, 0.877);
+  display: none;
+ }
+ .ord-tbl h4{
+  width: 90%;
+  font-size: 16px;
+  text-align: center;
+  margin: 20px auto;
+ }
+ .ord-tbl table{
+  width: 97%;
+  margin: auto;
+ }
+ .ord-tbl table thead th{
+  text-align: left;
+  background-color: #525252;
+  font-size: 14px;
+  padding-left: 10px;
+ }
+ .ord-tbl table tbody td{
+  text-align: left;
+  font-size: 11px;
+  border: 1px solid grey;
+  padding-left: 3px;
+ }
+ .ord-tbl table tbody .dl-c{
+  padding-top: 20px;
+  border: unset;
+  font-weight: 900;
+ }
+ .ord-tbl table tbody .qt{
+  color: rgb(96, 250, 36);
+  font-weight: 900;
+ }
+ .ord-tbl table tbody .qt-p{
+  color: rgb(255, 238, 0)
+ }
+ .ord-tbl table tbody .qt-r{
+  color: blue;
+  background: #fff;
+  text-align: center;
+  font-weight: 900;
+  cursor: pointer;
+ }
+
+ /* Reffer a friend*/
+
+ .rf-a-f{
+  display: none;
+ }
 
 /*-----------------------------------*\
   #HEADER
@@ -866,6 +1144,7 @@ button, a { transition: var(--transition); }
   border-radius: 50%;
   display: grid;
   place-items: center;
+  cursor: pointer;
 }
 
 .about-item-icon ion-icon {
@@ -876,6 +1155,7 @@ button, a { transition: var(--transition); }
 .about-item-text {
   color: var(--cadet);
   font-size: var(--fs-5);
+  cursor: pointer;
 }
 
 .about .callout {
@@ -1455,7 +1735,7 @@ button, a { transition: var(--transition); }
 
 .footer .container { padding-inline: 30px; }
 
-.footer a { color: inherit; }
+.footer a { color: inherit; cursor: pointer;}
 
 .footer-top {
   padding-top: 80px;
@@ -1552,6 +1832,39 @@ button, a { transition: var(--transition); }
 .by-vkn_grp a{
   color: rgb(13, 138, 221);
 }
+.fdbck-fm form input{
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  color: rgb(58, 58, 58);
+  background-color: #d4d4d4;
+}
+.fdbck-fm form textarea{
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  color: rgb(58, 58, 58);
+  background-color: #d4d4d4;
+}
+.fdbck-fm form label{
+  margin: 5px 0px;
+}
+.fdbck-fm button{
+  color: white;
+  background: #007bff;
+  padding: 1px 20px;
+  border-radius: 5px;
+  float: right;
+}
+.footer-link-q{
+  margin-top: 15px;
+  font-size: 12px;
+}
 
 /*-----------------------------------*\
   #Sign Up
@@ -1587,7 +1900,7 @@ label{
   font-weight: bold;
   margin-bottom: 5px;
 }
-input[type="text"], input[type="email"], input[type="password"], select{
+.container2 input[type="text"], input[type="email"], input[type="password"], select{
   width: 100%;
   padding: 5px;
   border: 1px solid #ccc;
@@ -1608,7 +1921,7 @@ input[type="text"], input[type="email"], input[type="password"], select{
   cursor: pointer;
   margin: auto 30%;
 }
-input[type="submit"]:hover {
+.container2 input[type="submit"]:hover {
   background-color: #0056b3;
 }
 
@@ -1788,6 +2101,9 @@ input[type="submit"]:hover {
   }
 
   /**
+    * PopUps
+  */
+   /**
     * Signup Login
   */
   .container2 {
@@ -1798,7 +2114,17 @@ input[type="submit"]:hover {
   .s-l-nv .logo a {
     font-size: 16px;
   }
+  .faq-container {
+    display: flex;
+  }
+  .question h2 {
+    font-size: 18px;
+    color: #007bff;
+  }
 
+  .question .answer p{
+    font-size: 16px;
+  }
 }
 
 

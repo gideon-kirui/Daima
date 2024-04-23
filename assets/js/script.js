@@ -111,15 +111,52 @@ function closeHistory() {
   document.querySelector('.history').style.display = 'none'
 }
 
-// Questions and Answers pop up
+// FAQ popup
 
-document.addEventListener('DOMContentLoaded', function() {
-  const questions = document.querySelectorAll('.question h2');
+function openFaqpop() {
+  document.querySelector('.gt-answs').style.display = 'block'
+}
 
-  questions.forEach(function(question) {
-    question.addEventListener('click', function() {
-      const answer = this.nextElementSibling;
-      answer.classList.toggle('show');
-    });
-  });
-});
+function closeFaqpop() {
+  document.querySelector('.gt-answs').style.display = 'none'
+}
+
+//Become a partner popup
+
+function openBcmpt() {
+  document.querySelector('.bcm-ptn').style.display = 'block'
+}
+
+function closeBcmpt() {
+  document.querySelector('.bcm-ptn').style.display = 'none'
+}
+
+//Vacancies popup
+
+function openVcncs() {
+  document.querySelector('.vcncs').style.display = 'block'
+}
+
+function closeVcncs() {
+  document.querySelector('.vcncs').style.display = 'none'
+}
+
+//Order tracking popup
+
+function openOrdtbl() {
+  document.querySelector('.ord-tbl').style.display = 'block'
+}
+
+function closeOrdtbl() {
+  document.querySelector('.ord-tbl').style.display = 'none'
+}
+
+//reffer a friend
+
+function openReff() {
+  document.querySelector('.rf-a-f').style.display = 'block'
+}
+
+function closeReff() {
+  document.querySelector('.rf-a-f').style.display = 'none'
+}
